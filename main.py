@@ -72,7 +72,7 @@ def display_filtered_data():
     for sport in sports:
         url = f'https://api.the-odds-api.com/v4/sports/{sport}/odds'
         params = {
-            'apiKey': "ca53c9d2e482209df1604ea50bbcddcb",
+            'apiKey': "",
             'regions': 'us,uk,eu,au',
             'oddsFormat': 'decimal'
         }
