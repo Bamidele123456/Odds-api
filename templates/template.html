@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/n generated response /n</title>
+</head>
+<body>
+    <h1>/n generated response /n</h1>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Sport key</th>
+                <th>Bookmaker key</th>
+                <th>Sport Title</th>
+                <th>Sport Team</th>
+                <th>Commence Time</th>
+                <th>Outcome Name</th>
+                <th>Outcome Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in filtered_data %}
+                <tr>
+                    <td>{{ entry.sport_key }}
+                    <td>{{ entry.key }}</td>
+                    <td>{{ entry.sport_title }}</td>
+                    <td>{{ entry.sport_team }}</td>
+                    <td>{{ entry.commence_time }}</td>
+                    <td>{{ entry.outcome_name }}</td>
+                    <td>{{ entry.outcome_price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
